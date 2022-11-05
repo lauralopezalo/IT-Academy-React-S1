@@ -96,6 +96,40 @@ nav li:hover {
     animation: slogan-animation 4s ease-in-out;
 }
 
+@keyframes slogan-animation {
+    0% {
+        opacity: 0;
+        font-size: 20px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+        font-size: 24px;
+    }
+}
+
+
+@keyframes logo-animation {
+    0% {
+        filter: drop-shadow(1mm 1mm 1mm rgba(0, 0, 0, 0.4));
+        transform: translatey(0px);
+    }
+
+    50% {
+        filter: drop-shadow(0 3mm 3mm rgba(0, 0, 0, 0.3));
+        transform: translatey(-5px);
+    }
+
+    100% {
+        filter: drop-shadow(1mm 1mm 1mm rgba(0, 0, 0, 0.4));
+        transform: translatey(0px);
+    }
+}
+
 /* -------------------- @TABLET -------------------- */
 
 @media screen and (max-width: 768px) {
