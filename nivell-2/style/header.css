@@ -1,0 +1,134 @@
+header {
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    position: relative;
+    padding: 50px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav-container img {
+    cursor: pointer;
+}
+
+.nav-container img:hover {
+    transform: scale(110%);
+    transition: 200ms;
+}
+
+.rrss {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: gray;
+    margin-right: 15px;
+}
+
+.rrss i {
+    cursor: pointer;
+}
+
+.rrss i:hover {
+    color: #ef8080;
+}
+
+.nav-container img {
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 24px 0;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #ef8080;
+}
+
+.slogan-container {
+    position: relative;
+}
+
+.gray-container {
+    background-color: gray;
+    opacity: 0.2;
+    text-align: center;
+    height: 120px;
+    margin: 0px 20px;
+}
+
+.slogan {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.slogan p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: orange;
+    opacity: 0.8;
+    padding: 0 40px
+}
+
+
+
+
+/* -------------------- @TABLET -------------------- */
+
+@media screen and (max-width: 768px) {
+
+    .nav-container {
+        padding: 20px 0 80px 0;
+    }
+
+    nav,
+    .rrss {
+        display: none;
+    }
+
+}
+
+/* -------------------- @MOBILE -------------------- */
+
+@media screen and (max-width: 480px) {
+
+
+    header {
+        background-size: cover;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+}
