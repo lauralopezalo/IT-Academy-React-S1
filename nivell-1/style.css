@@ -83,3 +83,17 @@ footer {
 footer > div {
   background-color: #e6af2e;
 }
+
+@media screen and (max-width: 780px) {
+
+  main {
+    background-color: #feff03;
+    grid-template-areas:
+      "section"
+      "aside";
+  }
+
+  aside {
+    padding-bottom: 10px;
+  }
+}
