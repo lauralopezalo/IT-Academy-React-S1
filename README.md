@@ -1,1 +1,1 @@
-# lauralopezalo-IT-Academy-React-S1
+# IT-Academy-React-S1
