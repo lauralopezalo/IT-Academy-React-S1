@@ -1,0 +1,126 @@
+header {
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+    display: grid;
+}
+
+.nav-container {
+    padding: 50px 0 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    margin-bottom: 10px;
+    gap: 5%;
+}
+
+.nav-container img {
+    cursor: pointer;
+    filter: drop-shadow(1mm 1mm 1mm rgba(0, 0, 0, 0.5));
+    width: 70px;
+    animation: logo-animation 3s ease-in-out infinite;
+}
+
+.nav-container img:hover {
+    animation-play-state: paused;
+}
+
+.rrss {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    align-items: center;
+    color: gray;
+    margin-right: 15px;
+}
+
+.rrss i {
+    cursor: pointer;
+}
+
+.rrss i:hover {
+    color: #ef8080;
+}
+
+nav {
+    justify-self: center;
+    color: gray;
+}
+
+nav ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 45px;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 24px 0;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #ef8080;
+}
+
+.slogan-container {
+    position: relative;
+    height: 100%;
+}
+
+.gray-container {
+    background-color: gray;
+    opacity: 0.2;
+    text-align: center;
+    height: 120px;
+    margin: 0px 20px;
+}
+
+.slogan {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.slogan p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: orange;
+    opacity: 0.8;
+    padding: 0 40px;
+    animation: slogan-animation 4s ease-in-out;
+}
+
+/* -------------------- @TABLET -------------------- */
+
+@media screen and (max-width: 768px) {
+
+    .nav-container {
+        padding: 20px 0 80px 0;
+    }
+
+    nav,
+    .rrss {
+        display: none;
+    }
+
+}
+
+/* -------------------- @MOBILE -------------------- */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        background-size: cover;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+}

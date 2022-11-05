@@ -1,0 +1,136 @@
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: #d8d7d7;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "none none"
+        "none none"
+        "caption caption";
+    gap: 20px;
+    grid-area: section;
+}
+
+.article-card {
+    background-color: #f5f1f1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.img-data-container {
+    min-height: 200px;
+    background-size: cover;
+    display: grid;
+    align-items: flex-end;
+}
+
+.img-sakura {
+    background-image: url("../img/sakura.jpg");
+}
+
+.img-comida {
+    background-image: url("../img/comida.jpg");
+}
+
+.img-fuji {
+    background-image: url("../img/fuji.jpg");
+}
+
+.img-noche {
+    background-image: url("../img/noche.jpg");
+}
+
+
+.img-data-container time {
+    color: yellow;
+    opacity: 0.7;
+    padding: 4px;
+}
+
+.article-title h1 {
+    color: white;
+    background-color: #ef8080;
+    padding: 10px 5px 0px 5px;
+}
+
+
+.article-body p {
+    color: #535353;
+    padding: 20px 4px;
+}
+
+.read-more p {
+    color: #808080;
+    padding: 0px 4px;
+}
+
+.caption {
+    grid-area: caption;
+    font-weight: 700;
+    text-align: center;
+}
+
+aside {
+    background-color: #d8d7d7;
+    padding: 20px;
+    text-align: center;
+}
+.aside-title {
+padding: 15px 0;
+
+}
+.aside-title span {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+aside p{
+    font-weight: 700;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "section section aside";
+    gap: 20px;
+}
+
+/* -------------------- @TABLET -------------------- */
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-areas:
+            "section"
+            "aside";
+    }
+}
+
+/* -------------------- @MOBILE -------------------- */
+
+@media screen and (max-width: 480px) {
+    section {
+        display: block;
+    }
+
+    section>div {
+        margin-bottom: 20px;
+    }
+
+    .article-card {
+        min-width: 70px;
+    }
+
+    .caption {
+        margin-bottom: 0;
+    }
+
+    aside {
+        padding-bottom: 10px;
+    }
+
+    aside>div {
+        margin-bottom: 10px;
+    }
+}
